@@ -168,7 +168,7 @@
         text-align: left;
         display: grid;
         gap: 16px;
-        max-height: 250px;
+        /* max-height: 250px; */
     }
 
     /* Auf der Home-Seite (nur auf mobilen Geräten) Exzerpt ausblenden */
