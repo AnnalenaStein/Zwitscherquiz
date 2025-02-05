@@ -53,5 +53,18 @@
     padding: 12px;
     border-radius: 5px;
     text-align: left;
+    overflow: hidden; 
+    display: -webkit-box;
+    -webkit-line-clamp: 6; 
+    -webkit-box-orient: vertical;
+    max-height: calc(1.6em * 6);
   }
+
+  @media (min-width: 768px) {
+    .wiki-excerpt {
+        -webkit-line-clamp: unset; /* Entfernt die Begrenzung auf größeren Bildschirmen */
+        max-height: none;
+        overflow: visible;
+    }
+}
 </style>

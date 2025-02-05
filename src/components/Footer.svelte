@@ -21,7 +21,6 @@
         color: black;
         text-align: center;
         padding: 16px 0;
-        position: relative;
         bottom: 0;
         left: 0;
     }
@@ -55,10 +54,10 @@
         .footer-content {
             flex-direction: row;
             justify-content: space-between;
-            padding: 0 24px;
-            max-width: 1200px;
             margin: 0 auto;
             gap: 8px;
+            padding: 0px 24px 0px 24px;
+            bottom: 0;
         }
     }
 </style>

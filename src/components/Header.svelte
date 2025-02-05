@@ -8,12 +8,13 @@
 <header>
   <h1>{title}</h1>
   <p>{subtitle}</p>
-
+  
   <nav class="navBar-container">
-    <a href="#/auswahl" class="navBar-button {activePage === 'Auswahl' ? 'active' : ''}">Quiz</a>
-    <a href="#/" class="navBar-button {activePage === 'Home' ? 'active' : ''}">Home</a>
-    <a href="#/uebersicht" class="navBar-button {activePage === 'Übersicht' ? 'active' : ''}">Steckbriefe</a>
+    <a href="#/auswahl" class="navBar-button" class:active={$activePage === 'Auswahl'}>Quiz</a>
+    <a href="#/" class="navBar-button" class:active={$activePage === 'Home'}>Home</a>
+    <a href="#/uebersicht" class="navBar-button" class:active={$activePage === 'Übersicht'}>Steckbriefe</a>
   </nav>
+  
 </header>
 
 <style>
@@ -38,12 +39,11 @@
   }
   .active {
     font-weight: bold;
-    background: #3b471c;
-    color: white;
+    color: rgb(0, 0, 0);
   }
 
   .navBar-button:hover {
-  background: #c5d1a3;
+  color: #ffffff;
 }
 
   @media (min-width: 768px) {

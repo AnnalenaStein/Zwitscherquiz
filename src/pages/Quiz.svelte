@@ -15,8 +15,8 @@
     const selectedCategory = urlParams.get("category");
 
     onMount(async () => {
-    await loadNewOptions();
-});
+        await loadNewOptions();
+    });
 
     // Filtern der Vögel nach Kategorie
     let birds = birdData.filter((bird) => bird.category === selectedCategory);
@@ -176,7 +176,7 @@
                 </div>
 
                 <!-- Audioaufnahme -->
-                <div class="audio">
+                <div>
                     {#if isLoading}
                         <p class="play-button">Lade Audio...</p>
                     {:else}
@@ -239,13 +239,14 @@
         background-color: #a7b487;
     }
 
+
     .quiz-container {
         width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 8px;
+        gap: 16px;
     }
 
     .instructions {
@@ -259,9 +260,10 @@
     }
 
     .question-container {
-        background-color: #f5e7d6;
+        background-color: #f8f8f8;
+        border: 1px solid #a7b487;
         /* padding: 120px 10px 120px 10px; */
-        height: 210px;
+        height: 220px;
         aspect-ratio: 16/9;
         border-radius: 8px;
         text-align: center;
@@ -283,7 +285,7 @@
         padding: 12px 56px;
         border-radius: 8px;
         font-size: 1rem;
-        color: #0f0f0f;
+        color: #545454;
         border: none;
     }
 
@@ -301,7 +303,7 @@
         border-radius: 8px;
         padding: 16px;
         width: 180px;
-        height: 110px;
+        height: 120px;
         text-align: center;
         font-size: 1rem;
     }
@@ -321,21 +323,31 @@
 
     .option.incorrect {
         background-color: #d7e2d0; /* Rot für die falsche Antwort */
+        color: #545454;
     }
 
-    @media (min-width: 48em) {
+    @media (min-width: 768px) {
+        .quiz-container {
+            gap: 8px;
+
+        }
         .dot {
             width: 16px;
             height: 16px;
         }
 
         .question-container {
-            height: 260px;
-            aspect-ratio: 16/9;
+            height: 220px;
+            width: 416px;
         }
 
         .play-button {
-            padding: 8px 72px;
+            width: 200px; /* Feste Breite, anpassen nach Bedarf */
+            height: 48px; 
+            font-size: 1em;
+            white-space: nowrap; 
+            text-align: center;
+            justify-content: center;
             font-size: 1em;
             transition:
                 background-color 0.3s,
@@ -348,7 +360,7 @@
 
         .option {
             width: 200px;
-            height: 130px;
+            height: 110px;
             font-size: 1.1em;
         }
     }

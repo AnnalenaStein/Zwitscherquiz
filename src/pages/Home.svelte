@@ -1,7 +1,7 @@
 <script>
     import Header from "../components/Header.svelte";
     import Wiki from "../components/Wiki.svelte";
-    let birdName = "Kohlmeise";
+    let birdName = "Stieglitz";
     let excerpt = "";
     import Footer from "../components/Footer.svelte";
 
@@ -23,7 +23,7 @@
         </a>
 
         <div class="bird-of-the-day">
-            <h2 class="bird-title">Vogel des Tages</h2>
+            <h2 class="bird-ueberschrift">Vogel des Tages</h2>
             <img src="/src/images/{birdName}.jpg" alt={birdName} />
             <div>
                 <div class="bird-description">
@@ -31,13 +31,13 @@
                     <Wiki {birdName} bind:excerpt>
                         <!-- Jetzt wird das Excerpt hier verfügbar -->
                     </Wiki>
-                    <a href="#/steckbrief/Kohlmeise">-> zum Steckbrief</a>
+                    <a href="#/steckbrief/{birdName}"> zum Steckbrief</a>
                 </div>
             </div>
         </div>
     </div>
 </main>
-<Footer text="Vogelquiz - Entdecke die Natur!" />
+<Footer text="Vogelquiz - Hör mal wer da piept!" />
 
 <style>
     .grid-section {
@@ -103,7 +103,8 @@
     }
 
     a {
-        color: #2a2a2a;
+        color: #ffffff;
+        font-size: 16px;
     }
 
     .bird-of-the-day {
@@ -111,18 +112,60 @@
         background: #f8f8f8;
         border: 1px solid #a7b487;
         border-radius: 8px;
-        padding: 20px;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        gap: 20px;
+        overflow: hidden;
+        height: 700px;
+        width: 100%;
+        position: relative;
+    }
+
+    .bird-of-the-day::before {
+        content: ""; /* Wichtig, um das Pseudo-Element sichtbar zu machen */
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(
+            to bottom,
+            rgba(167, 180, 135, 0) 60%,
+            #555555 100%
+        );
+        z-index: 5; /* Stellt sicher, dass es hinter dem Text, aber über dem Bild liegt */
     }
 
     .bird-of-the-day img {
         width: 100%;
-        max-height: 500px;
+        height: 100%;
         object-fit: cover;
+        flex-grow: 1;
         border-radius: 8px;
+    }
+
+    .bird-ueberschrift {
+        position: absolute;
+        top: 10px;
+        text-align: center;
+        padding: 8px 16px;
+        border-radius: 4px;
+        z-index: 10;
+        top: 10px;
+        color: white;
+        left: 50%; 
+        transform: translateX(-50%);
+    }
+
+    .bird-description {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding: 16px;
+        text-align: center;
+        z-index: 10;
+        text-align: left;
+        display: grid;
+        gap: 16px;
     }
 
     @media (min-width: 768px) {

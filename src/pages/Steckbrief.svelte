@@ -19,7 +19,7 @@
     const parts = hash.split("/");
     birdName = decodeURIComponent(parts[parts.length - 1]);
 
-    bird = birdData.find(b => b.name === birdName) || {}; // Findet den Vogel im Array
+    bird = birdData.find((b) => b.name === birdName) || {}; // Findet den Vogel im Array
 
     if (bird) {
       await loadImages();
@@ -41,7 +41,7 @@
   onMount(async () => {
     const hash = window.location.hash; // Holt den Fragment-Teil der URL
     const parts = hash.split("/"); // Teilt den String bei jedem '/'
-    birdName = decodeURIComponent(parts[parts.length - 1]);  // Der letzte Teil ist der Vogelname
+    birdName = decodeURIComponent(parts[parts.length - 1]); // Der letzte Teil ist der Vogelname
 
     await loadImages();
     await fetchRecordings(birdName);
@@ -109,32 +109,31 @@
 
 <div class="content-wrapper">
   <Header title="Steckbriefe" subtitle="" />
-<!-- Bild -->
-<main>
-<div class="image-container">
+  <!-- Bild -->
+  <main>
+    <div class="image-container">
+      <button on:click={() => window.history.back()} class="back-button">
+        ‹
+      </button>
 
-  <button on:click={() => window.history.back()} class="back-button">
-    ‹
-  </button>
+      <div class="image-placeholder">
+        <!-- Stelle sicher, dass bird.image existiert, bevor es gerendert wird -->
+        {#if bird.image}
+          <img src={bird.image} alt={bird.name} />
+        {/if}
+      </div>
+    </div>
 
-  <div class="image-placeholder">
-    <!-- Stelle sicher, dass bird.image existiert, bevor es gerendert wird -->
-    {#if bird.image}
-      <img src={bird.image} alt={bird.name} />
-    {/if}
-  </div>
-</div>
+    <div class="container">
+      <!-- Bird Info -->
+      <h1>{birdName}</h1>
+      <p class="latin-name"><em>{bird.latin_name}</em></p>
 
-<div class="container">
-  <!-- Bird Info -->
-  <h1>{birdName}</h1>
-  <p class="latin-name"><em>{bird.latin_name}</em></p> 
-  
-  <Wiki {birdName} bind:excerpt>
-    <!-- Jetzt wird das Excerpt hier verfügbar -->
-  </Wiki>
+      <Wiki {birdName} bind:excerpt>
+        <!-- Jetzt wird das Excerpt hier verfügbar -->
+      </Wiki>
 
-  <!-- Sections
+      <!-- Sections
   <div>
     <h2>Kurze Beschreibung</h2>
     <p>
@@ -142,62 +141,69 @@
     </p>
   </div> -->
 
-  <h2>Vogellaute</h2>
-  {#each categories as category}
-    {#if filteredRecordings[category]}
-      <h3>{categoryTranslations[category]}</h3>
-      <div>
-        {#each filteredRecordings[category] as recording}
-          <button on:click={() => playSound(recording.file)} class="play-button">
-            {recording.date}
-          </button>
-        {/each}
-      </div>
-    {/if}
-  {/each}
+      <h2>Vogellaute</h2>
+      {#each categories as category}
+        {#if filteredRecordings[category]}
+          <h3>{categoryTranslations[category]}</h3>
+          <div>
+            {#each filteredRecordings[category] as recording}
+              <button
+                on:click={() => playSound(recording.file)}
+                class="play-button"
+              >
+                {recording.date}
+              </button>
+            {/each}
+          </div>
+        {/if}
+      {/each}
+    </div>
+  </main>
 </div>
-</div>
-
 
 <style>
   .content-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 32px;
-  margin: 0 auto;
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    margin: 0 auto;
+  }
 
   .container {
-  display: grid;
-  gap: 16px; 
-  padding: 36px; 
-  text-align: left;
-}
+    display: grid;
+    gap: 16px;
+    padding: 36px;
+    text-align: left;
+  }
 
-.latin-name {
+  h3 {
+    color: black;
+  }
+
+  .latin-name {
     font-style: italic; /* Setzt die Schriftart auf Kursiv */
     color: #555; /* Dunkelgraue Textfarbe für bessere Lesbarkeit */
     font-size: 18px; /* Legt eine spezifische Schriftgröße fest */
     margin-top: -5px; /* Abstand nach oben */
-    font-family: 'Times New Roman', Times, serif; 
+    font-family: "Times New Roman", Times, serif;
     text-transform: capitalize;
   }
 
- .back-button {
-  position: absolute; /* Positioniert den Button absolut innerhalb des image-container */
-  top: 10px; /* Abstand von der oberen Kante des Containers */
-  left: 10px;
-  z-index: 10;
-  color: #3d3d3d;
-  font-size: 40px;
-  background-color: white;
-  border: none;
- padding: 2px 16px 8px 16px;
-  border-radius: 8px;
- }
+  .back-button {
+    position: absolute; /* Positioniert den Button absolut innerhalb des image-container */
+    top: 10px; /* Abstand von der oberen Kante des Containers */
+    left: 10px;
+    z-index: 10;
+    color: #3d3d3d;
+    font-size: 40px;
+    background-color: white;
+    border: none;
+    padding: 2px 16px 8px 16px;
+    border-radius: 8px;
+  }
 
- .play-button {
+  .play-button {
     margin: 10px;
     background-color: #f5e7d6;
     padding: 10px 60px 10px 60px;
@@ -225,21 +231,36 @@
     width: 100%;
     height: auto; /* Erhält das Seitenverhältnis */
     display: block; /* Entfernt zusätzlichen Abstand unter dem Bild */
+    object-fit: cover;
   }
 
   @media (min-width: 768px) {
     .content-wrapper {
-    display: grid;
-    grid-template-columns: 1fr; /* Zwei gleich breite Spalten */
-    gap: 40px; /* Abstand zwischen Bild und Text */
-    align-items: center; /* Zentriert Bild und Text vertikal */
-  }
+      display: grid;
+      grid-template-columns: 1fr; /* Zwei gleich breite Spalten */
+      gap: 40px; /* Abstand zwischen Bild und Text */
+      align-items: center; /* Zentriert Bild und Text vertikal */
+    }
 
     .container {
-      align-items: center;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      padding: 36px;
       text-align: left;
-      justify-content: center;
+      width: 100%;
+      width: 750px; /* Gleiche Breite wie das Bild */
+      margin: 0 auto;
     }
+
+    .image-placeholder img {
+    width: 100%;
+    width: 700px;
+    height: auto; /* Erhält das Seitenverhältnis */
+    max-height: 400px;
+    display: block; /* Entfernt zusätzlichen Abstand unter dem Bild */
+    object-fit: cover;
+  }
 
     .image-container {
       width: 100%;

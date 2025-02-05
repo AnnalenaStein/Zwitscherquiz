@@ -20,13 +20,13 @@
    .button {
         background-color: #B95D12;
         color: white;
-        padding: 12px 60px;
+        padding: 12px 56px;
         font-size: 1rem;
         border: none;
         border-radius: 8px;
         transition: background-color 0.3s ease, transform 0.2s ease;
         text-align: center;
-        margin: 10px;
+        margin: 24px;
     }
 
     .button:hover {
