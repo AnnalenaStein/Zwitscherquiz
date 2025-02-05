@@ -225,6 +225,7 @@
     align-items: center;
     overflow: hidden;
     width: 100%;
+    border-radius: 8px;
   }
 
   .image-placeholder img {

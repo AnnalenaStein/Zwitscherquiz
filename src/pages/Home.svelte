@@ -28,9 +28,11 @@
             <div>
                 <div class="bird-description">
                     <h3>{birdName}</h3>
-                    <Wiki {birdName} bind:excerpt>
-                        <!-- Jetzt wird das Excerpt hier verfügbar -->
-                    </Wiki>
+                    <Wiki
+                        class="wiki-excerpt home-excerpt"
+                        {birdName}
+                        bind:excerpt
+                    />
                     <a href="#/steckbrief/{birdName}"> zum Steckbrief</a>
                 </div>
             </div>
@@ -152,7 +154,7 @@
         z-index: 10;
         top: 10px;
         color: white;
-        left: 50%; 
+        left: 50%;
         transform: translateX(-50%);
     }
 
@@ -166,6 +168,14 @@
         text-align: left;
         display: grid;
         gap: 16px;
+        max-height: 250px;
+    }
+
+    /* Auf der Home-Seite (nur auf mobilen Geräten) Exzerpt ausblenden */
+    @media (max-width: 768px) {
+        #home-excerpt {
+            display: none;
+        }
     }
 
     @media (min-width: 768px) {

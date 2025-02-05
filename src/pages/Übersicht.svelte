@@ -41,11 +41,11 @@
 <style>
   .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 16px;
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 768px) {
     /* Anpassungen für noch größere Bildschirme: 4 Spalten */
     .grid-container {
       grid-template-columns: repeat(4, 1fr);
