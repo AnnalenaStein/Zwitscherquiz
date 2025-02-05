@@ -1,0 +1,482 @@
+[
+  {
+    "gen": "Parus",
+    "sp": "major",
+    "cnt": "Germany",
+    "name": "Kohlmeise",
+    "latin_name": "Parus major",
+    "category": "Gartenvögel"
+  },
+  {
+    "gen": "Erithacus",
+    "sp": "rubecula",
+    "cnt": "Germany",
+    "name": "Rotkehlchen",
+    "latin_name": "Erithacus rubecula",
+    "category": "Gartenvögel"
+  },
+  {
+    "gen": "Turdus",
+    "sp": "merula",
+    "cnt": "Germany",
+    "name": "Amsel",
+    "latin_name": "Turdus merula",
+    "category": "Gartenvögel"
+  },
+  {
+    "gen": "Passer",
+    "sp": "domesticus",
+    "cnt": "Germany",
+    "name": "Haussperling",
+    "latin_name": "Passer domesticus",
+    "category": "Gartenvögel"
+  },
+  {
+    "gen": "Fringilla",
+    "sp": "coelebs",
+    "cnt": "Germany",
+    "name": "Buchfink",
+    "latin_name": "Fringilla coelebs",
+    "category": "Gartenvögel"
+  },
+  {
+    "gen": "Cyanistes",
+    "sp": "caeruleus",
+    "cnt": "Germany",
+    "name": "Blaumeise",
+    "latin_name": "Cyanistes caeruleus",
+    "category": "Gartenvögel"
+  },
+  {
+    "gen": "Sturnus",
+    "sp": "vulgaris",
+    "cnt": "Germany",
+    "name": "Star",
+    "latin_name": "Sturnus vulgaris",
+    "category": "Gartenvögel"
+  },
+  {
+    "gen": "Carduelis",
+    "sp": "carduelis",
+    "cnt": "Germany",
+    "name": "Stieglitz",
+    "latin_name": "Carduelis carduelis",
+    "category": "Gartenvögel"
+  },
+  {
+    "gen": "Columba",
+    "sp": "palumbus",
+    "cnt": "Germany",
+    "name": "Ringeltaube",
+    "latin_name": "Columba palumbus",
+    "category": "Gartenvögel"
+  },
+  {
+    "gen": "Troglodytes",
+    "sp": "troglodytes",
+    "cnt": "Germany",
+    "name": "Zaunkönig",
+    "latin_name": "Troglodytes troglodytes",
+    "category": "Gartenvögel"
+  },
+  {
+    "gen": "Dendrocopos",
+    "sp": "major",
+    "cnt": "Germany",
+    "name": "Buntspecht",
+    "latin_name": "Dendrocopos major",
+    "category": "Waldvögel"
+  },
+  {
+    "gen": "Picus",
+    "sp": "viridis",
+    "cnt": "Germany",
+    "name": "Grünspecht",
+    "latin_name": "Picus viridis",
+    "category": "Waldvögel"
+  },
+  {
+    "gen": "Certhia",
+    "sp": "familiaris",
+    "cnt": "Germany",
+    "name": "Waldbaumläufer",
+    "latin_name": "Certhia familiaris",
+    "category": "Waldvögel"
+  },
+  {
+    "gen": "Regulus",
+    "sp": "regulus",
+    "cnt": "Germany",
+    "name": "Wintergoldhähnchen",
+    "latin_name": "Regulus regulus",
+    "category": "Waldvögel"
+  },
+  {
+    "gen": "Garrulus",
+    "sp": "glandarius",
+    "cnt": "Germany",
+    "name": "Eichelhäher",
+    "latin_name": "Garrulus glandarius",
+    "category": "Waldvögel"
+  },
+  {
+    "gen": "Dryocopus",
+    "sp": "martius",
+    "cnt": "Germany",
+    "name": "Schwarzspecht",
+    "latin_name": "Dryocopus martius",
+    "category": "Waldvögel"
+  },
+  {
+    "gen": "Phoenicurus",
+    "sp": "phoenicurus",
+    "cnt": "Germany",
+    "name": "Gartenrotschwanz",
+    "latin_name": "Phoenicurus phoenicurus",
+    "category": "Waldvögel"
+  },
+  {
+    "gen": "Strix",
+    "sp": "aluco",
+    "cnt": "Germany",
+    "name": "Waldkauz",
+    "latin_name": "Strix aluco",
+    "category": "Waldvögel"
+  },
+  {
+    "gen": "Turdus",
+    "sp": "philomelos",
+    "cnt": "Germany",
+    "name": "Singdrossel",
+    "latin_name": "Turdus philomelos",
+    "category": "Waldvögel"
+  },
+  {
+    "gen": "Corvus",
+    "sp": "corax",
+    "cnt": "Germany",
+    "name": "Kolkrabe",
+    "latin_name": "Corvus corax",
+    "category": "Waldvögel"
+  },
+  {
+    "gen": "Anas",
+    "sp": "platyrhynchos",
+    "cnt": "Germany",
+    "name": "Stockente",
+    "latin_name": "Anas platyrhynchos",
+    "category": "Wasservögel"
+  },
+  {
+    "gen": "Fulica",
+    "sp": "atra",
+    "cnt": "Germany",
+    "name": "Blässhuhn",
+    "latin_name": "Fulica atra",
+    "category": "Wasservögel"
+  },
+  {
+    "gen": "Podiceps",
+    "sp": "cristatus",
+    "cnt": "Germany",
+    "name": "Haubentaucher",
+    "latin_name": "Podiceps cristatus",
+    "category": "Wasservögel"
+  },
+  {
+    "gen": "Cygnus",
+    "sp": "olor",
+    "cnt": "Germany",
+    "name": "Höckerschwan",
+    "latin_name": "Cygnus olor",
+    "category": "Wasservögel"
+  },
+  {
+    "gen": "Ardea",
+    "sp": "cinerea",
+    "cnt": "Germany",
+    "name": "Graureiher",
+    "latin_name": "Ardea cinerea",
+    "category": "Wasservögel"
+  },
+  {
+    "gen": "Gallinula",
+    "sp": "chloropus",
+    "cnt": "Germany",
+    "name": "Teichhuhn",
+    "latin_name": "Gallinula chloropus",
+    "category": "Wasservögel"
+  },
+  {
+    "gen": "Larus",
+    "sp": "ridibundus",
+    "cnt": "Germany",
+    "name": "Lachmöwe",
+    "latin_name": "Larus ridibundus",
+    "category": "Küstenvögel"
+  },
+  {
+    "gen": "Haematopus",
+    "sp": "ostralegus",
+    "cnt": "Germany",
+    "name": "Austernfischer",
+    "latin_name": "Haematopus ostralegus",
+    "category": "Küstenvögel"
+  },
+  {
+    "gen": "Sterna",
+    "sp": "hirundo",
+    "cnt": "Germany",
+    "name": "Flussseeschwalbe",
+    "latin_name": "Sterna hirundo",
+    "category": "Küstenvögel"
+  },
+  {
+    "gen": "Numenius",
+    "sp": "arquata",
+    "cnt": "Germany",
+    "name": "Großer Brachvogel",
+    "latin_name": "Numenius arquata",
+    "category": "Küstenvögel"
+  },
+  {
+    "gen": "Buteo",
+    "sp": "buteo",
+    "cnt": "Germany",
+    "name": "Mäusebussard",
+    "latin_name": "Buteo buteo",
+    "category": "Greifvögel und Eulen"
+  },
+  {
+    "gen": "Aquila",
+    "sp": "chrysaetos",
+    "cnt": "Germany",
+    "name": "Steinadler",
+    "latin_name": "Aquila chrysaetos",
+    "category": "Greifvögel und Eulen"
+  },
+  {
+    "gen": "Falco",
+    "sp": "peregrinus",
+    "cnt": "Germany",
+    "name": "Wanderfalke",
+    "latin_name": "Falco peregrinus",
+    "category": "Greifvögel und Eulen"
+  },
+  {
+    "gen": "Falco",
+    "sp": "tinnunculus",
+    "cnt": "Germany",
+    "name": "Turmfalke",
+    "latin_name": "Falco tinnunculus",
+    "category": "Greifvögel und Eulen"
+  },
+  {
+    "gen": "Circus",
+    "sp": "aeruginosus",
+    "cnt": "Germany",
+    "name": "Rohrweihe",
+    "latin_name": "Circus aeruginosus",
+    "category": "Greifvögel und Eulen"
+  },
+  {
+    "gen": "Pandion",
+    "sp": "haliaetus",
+    "cnt": "Germany",
+    "name": "Fischadler",
+    "latin_name": "Pandion haliaetus",
+    "category": "Greifvögel und Eulen"
+  },
+  {
+    "gen": "Haliaeetus",
+    "sp": "albicilla",
+    "cnt": "Germany",
+    "name": "Seeadler",
+    "latin_name": "Haliaeetus albicilla",
+    "category": "Greifvögel und Eulen"
+  },
+  {
+    "gen": "Accipiter",
+    "sp": "gentilis",
+    "cnt": "Germany",
+    "name": "Habicht",
+    "latin_name": "Accipiter gentilis",
+    "category": "Greifvögel und Eulen"
+  },
+  {
+    "gen": "Accipiter",
+    "sp": "nisus",
+    "cnt": "Germany",
+    "name": "Sperber",
+    "latin_name": "Accipiter nisus",
+    "category": "Greifvögel und Eulen"
+  },
+  {
+    "gen": "Milvus",
+    "sp": "milvus",
+    "cnt": "Germany",
+    "name": "Rotmilan",
+    "latin_name": "Milvus milvus",
+    "category": "Greifvögel und Eulen"
+  },
+  {
+    "gen": "Milvus",
+    "sp": "migrans",
+    "cnt": "Germany",
+    "name": "Schwarzmilan",
+    "latin_name": "Milvus migrans",
+    "category": "Greifvögel und Eulen"
+  },
+  {
+    "gen": "Asio",
+    "sp": "otus",
+    "cnt": "Germany",
+    "name": "Waldohreule",
+    "latin_name": "Asio otus",
+    "category": "Greifvögel und Eulen"
+  },
+  {
+    "gen": "Asio",
+    "sp": "flammeus",
+    "cnt": "Germany",
+    "name": "Sumpfohreule",
+    "latin_name": "Asio flammeus",
+    "category": "Greifvögel und Eulen"
+  },
+  {
+    "gen": "Strix",
+    "sp": "aluco",
+    "cnt": "Germany",
+    "name": "Waldkauz",
+    "latin_name": "Strix aluco",
+    "category": "Greifvögel und Eulen"
+  },
+  {
+    "gen": "Tyto",
+    "sp": "alba",
+    "cnt": "Germany",
+    "name": "Schleiereule",
+    "latin_name": "Tyto alba",
+    "category": "Greifvögel und Eulen"
+  },
+  {
+    "gen": "Vanellus",
+    "sp": "vanellus",
+    "cnt": "Germany",
+    "name": "Kiebitz",
+    "latin_name": "Vanellus vanellus",
+    "category": "Wiesenvögel"
+  },
+  {
+    "gen": "Gallinago",
+    "sp": "gallinago",
+    "cnt": "Germany",
+    "name": "Bekassine",
+    "latin_name": "Gallinago gallinago",
+    "category": "Wiesenvögel"
+  },
+  {
+    "gen": "Tringa",
+    "sp": "totanus",
+    "cnt": "Germany",
+    "name": "Rotschenkel",
+    "latin_name": "Tringa totanus",
+    "category": "Wiesenvögel"
+  },
+  {
+    "gen": "Limosa",
+    "sp": "limosa",
+    "cnt": "Germany",
+    "name": "Uferschnepfe",
+    "latin_name": "Limosa limosa",
+    "category": "Wiesenvögel"
+  },
+  {
+    "gen": "Pluvialis",
+    "sp": "apricaria",
+    "cnt": "Germany",
+    "name": "Goldregenpfeifer",
+    "latin_name": "Pluvialis apricaria",
+    "category": "Wiesenvögel"
+  },
+  {
+    "gen": "Charadrius",
+    "sp": "dubius",
+    "cnt": "Germany",
+    "name": "Flussregenpfeifer",
+    "latin_name": "Charadrius dubius",
+    "category": "Wiesenvögel"
+  },
+  {
+    "gen": "Charadrius",
+    "sp": "hiaticula",
+    "cnt": "Germany",
+    "name": "Sandregenpfeifer",
+    "latin_name": "Charadrius hiaticula",
+    "category": "Wiesenvögel"
+  },
+  {
+    "gen": "Anthus",
+    "sp": "pratensis",
+    "cnt": "Germany",
+    "name": "Wiesenpieper",
+    "latin_name": "Anthus pratensis",
+    "category": "Wiesenvögel"
+  },
+  {
+    "gen": "Alauda",
+    "sp": "arvensis",
+    "cnt": "Germany",
+    "name": "Feldlerche",
+    "latin_name": "Alauda arvensis",
+    "category": "Wiesenvögel"
+  },
+  {
+    "gen": "Motacilla",
+    "sp": "flava",
+    "cnt": "Germany",
+    "name": "Schafstelze",
+    "latin_name": "Motacilla flava",
+    "category": "Wiesenvögel"
+  },
+  {
+    "gen": "Crex",
+    "sp": "crex",
+    "cnt": "Germany",
+    "name": "Wachtelkönig",
+    "latin_name": "Crex crex",
+    "category": "Wiesenvögel"
+  },
+  {
+    "gen": "Lanius",
+    "sp": "collurio",
+    "cnt": "Germany",
+    "name": "Neuntöter",
+    "latin_name": "Lanius collurio",
+    "category": "Wiesenvögel"
+  },
+  {
+    "gen": "Circus",
+    "sp": "pygargus",
+    "cnt": "Germany",
+    "name": "Wiesenweihe",
+    "latin_name": "Circus pygargus",
+    "category": "Wiesenvögel"
+  },
+  {
+    "gen": "Locustella",
+    "sp": "naevia",
+    "cnt": "Germany",
+    "name": "Feldschwirl",
+    "latin_name": "Locustella naevia",
+    "category": "Wiesenvögel"
+  },
+  {
+    "gen": "Cuculus",
+    "sp": "canorus",
+    "cnt": "Germany",
+    "name": "Kuckuck",
+    "latin_name": "Cuculus canorus",
+    "category": "Wiesenvögel"
+  }
+]
