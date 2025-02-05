@@ -355,7 +355,7 @@
         }
 
         .play-button:hover {
-            background-color: #e6d5c5;
+            background-color: #c9d4c3;
         }
 
         .option {
