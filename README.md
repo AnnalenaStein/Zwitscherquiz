@@ -60,9 +60,4 @@ Dieses Projekt wurde mit folgenden Technologien umgesetzt:
 - Sieh dir den Vogel des Tages auf der Startseite an
 - Gehe zum Steckbrief um mehr über den Vogel zu erfahren
 
-## Verbesserungsideen & TODOs
-
-- Highscore-Funktion: Speichern der besten Quiz-Ergebnisse
-- Mehr Filteroptionen/Suchfunktion für Steckbriefe
-- Verschiedene Level
-- Umgekehrtes Quiz (den richtigen Vogelgesang zu Bild von Vogel finden)
+-> Hab Spass mit dem Zwitscherquiz
